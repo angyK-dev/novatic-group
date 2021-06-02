@@ -30,6 +30,8 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+
+	scroll-behavior: smooth;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext");
@@ -81,7 +83,7 @@ body {
 		// color: var(--bleu-1);
 
 		&:hover {
-			color: var(--orange-4);
+			// color: var(--orange-4);
 			text-decoration: none;
 			// background: $gr-orange;
 			// background-clip: text;
@@ -521,6 +523,10 @@ hr.featurette-divider {
 section {
 	padding: 6rem 0;
 
+	h1 {
+		font-weight: bolder;
+	}
+
 	& .title-2 {
 		margin: 2rem 0;
 
@@ -597,6 +603,7 @@ footer {
 	& h4,
 	& h5 {
 		color: var(--orange-4);
+		font-weight: bolder;
 	}
 
 	& .contacts {
@@ -610,6 +617,10 @@ footer {
 
 	& svg {
 		height: 1.3rem;
+	}
+
+	& iframe {
+		height: 30vh;
 	}
 
 	& .social a {

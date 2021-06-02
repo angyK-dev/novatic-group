@@ -28,6 +28,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -51,7 +52,6 @@ body {
 }
 
 body a.nova-link:hover {
-  color: var(--orange-4);
   text-decoration: none;
 }
 
@@ -535,6 +535,10 @@ section {
   padding: 6rem 0;
 }
 
+section h1 {
+  font-weight: bolder;
+}
+
 section .title-2 {
   margin: 2rem 0;
 }
@@ -609,6 +613,7 @@ footer h3,
 footer h4,
 footer h5 {
   color: var(--orange-4);
+  font-weight: bolder;
 }
 
 footer .contacts {
@@ -621,6 +626,10 @@ footer a {
 
 footer svg {
   height: 1.3rem;
+}
+
+footer iframe {
+  height: 30vh;
 }
 
 footer .social a {
