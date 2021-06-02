@@ -612,7 +612,14 @@ footer {
 
 	& a {
 		color: var(--bleu-1);
+		
+		&:hover {
+			text-decoration: none;
+		}
 
+		&#mailnova:hover {
+			color: var(--orange-2);
+		}
 	}
 
 	& svg {
