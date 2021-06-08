@@ -222,7 +222,7 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 17px;
   background-image: none;
   position: relative;
-  border-bottom: 1px solid var(--orange-1);
+  border-bottom: 2px solid var(--bleu-1);
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
@@ -230,8 +230,8 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .navbar-light .navbar-toggler-icon:after, .navbar-light .navbar-toggler-icon:before {
   width: 24px;
   position: absolute;
-  height: 1px;
-  background-color: var(--orange-1);
+  height: 2px;
+  background-color: var(--bleu-1);
   top: 0;
   left: 0;
   content: "";
@@ -537,11 +537,14 @@ section#services h5 {
 }
 
 section #comingsoon {
-  background-color: #00091B;
+  background-color: #00091b;
   color: #fff;
 }
 
-section #contact h1, section #contact h2, section #contact h3, section #contact h4 {
+section #contact h1,
+section #contact h2,
+section #contact h3,
+section #contact h4 {
   color: var(--bleu-1);
 }
 
@@ -553,8 +556,8 @@ section .wrapper {
 
 section .wrapper .title {
   text-align: left;
-  font-size: 10vw;
-  font-family: 'Poppins', sans-serif;
+  font-size: 13vw;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 0;
   line-height: 1;
   font-weight: 700;
@@ -567,7 +570,7 @@ section .wrapper .title .dot {
 section .wrapper .subtitle {
   text-align: center;
   margin: 18px;
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
   font-weight: normal;
   position: relative;
 }
@@ -576,9 +579,10 @@ section .wrapper .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 2rem 0;
   /*a {
 				display: inline-block;
 				height: 3rem;
@@ -607,11 +611,10 @@ section .wrapper .icons .ico {
   min-height: 5rem;
   min-width: 5rem;
   text-align: center;
-  color: #00091B;
+  color: #00091b;
   background: #fff;
   border: 2px solid #fff;
   padding: 1rem;
-  margin: 0 1rem;
   border-radius: 50%;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
@@ -676,11 +679,11 @@ footer .social a {
 }
 
 footer .social a .fa-facebook-f:hover {
-  color: #4267B2;
+  color: #4267b2;
 }
 
 footer .social a .bi-twitter:hover {
-  color: #1DA1F2;
+  color: #1da1f2;
 }
 
 footer .social a .bi-instagram:hover {
