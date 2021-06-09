@@ -67,7 +67,7 @@ body {
 	line-height: 2.6375rem;
 	font-weight: 400;
 	color: var(--color-1);
-	background-color: #fff;
+	// background-color: #fff;
 	overflow-x: hidden;
 	transition: all 200ms linear;
 
@@ -440,6 +440,10 @@ body {
 section {
 	padding: 5.65rem 0;
 
+	#accueil {
+		background-color: #d0e6f3;
+	}
+
 	.nova-infos {
 		display: none;
 		background-color: var(--bleu-1);
@@ -702,8 +706,13 @@ footer {
 }
 
 /* #region Media */
+@media (min-width: 768px) and (max-width: 991px) {
+	.nav-item::before {
+		left: -24px !important;
+	}
+}
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 
 	// @media (max-width: 991px) {
 	h1 {
@@ -731,7 +740,6 @@ footer {
 	.dropdown-toggle::after {
 		position: absolute;
 		display: block;
-		// top: 10px;
 		top: 13px;
 		left: -23px;
 		width: 1px;
@@ -739,7 +747,6 @@ footer {
 		content: "";
 		border: none;
 		background-color: var(--color-nav-link);
-		// vertical-align: 0;
 		transition: all 200ms linear;
 	}
 
@@ -774,7 +781,7 @@ footer {
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 	section {
 		& .img-full {
 			width: 100%;

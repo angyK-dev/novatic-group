@@ -22,8 +22,7 @@
 
 	//Menu On Hover
 	$("body").on("mouseenter mouseleave", ".nav-item", function (e) {
-		console.log("Inside...");
-		if ($(window).width() > 767) {
+		if ($(window).width() > 991) {
 			var _d = $(e.target).closest(".nav-item");
 			_d.addClass("show");
 			setTimeout(function () {
