@@ -3,6 +3,7 @@
 
 	$(function () {
 		var header = $(".start-style");
+		// console.log(header);
 		$(window).scroll(function () {
 			var scroll = $(window).scrollTop();
 
@@ -21,7 +22,8 @@
 
 	//Menu On Hover
 	$("body").on("mouseenter mouseleave", ".nav-item", function (e) {
-		if ($(window).width() > 750) {
+		console.log("Inside...");
+		if ($(window).width() > 767) {
 			var _d = $(e.target).closest(".nav-item");
 			_d.addClass("show");
 			setTimeout(function () {
@@ -45,14 +47,14 @@
 // console.log("Test");
 const navLinks = document.querySelectorAll(".nova-link");
 
-Object.keys(navLinks).forEach(key => {
-    // console.log(key, typeof navLinks[key], navLinks[key], navLinks[key].classList);
-    navLinks[key].addEventListener("click", () => {
-        // console.log(navLinks[key]);
-        const _menuButton = document.querySelector("#menu-button");
-        const _menu = document.querySelector("#navbarContent");
-        // console.log(_menuButton.classList); 
-        _menuButton.classList.add("collapsed");
-        _menu.classList.remove("show");
-    })
+Object.keys(navLinks).forEach((key) => {
+	// console.log(key, typeof navLinks[key], navLinks[key], navLinks[key].classList);
+	navLinks[key].addEventListener("click", () => {
+		// console.log(navLinks[key]);
+		const _menuButton = document.querySelector("#menu-button");
+		const _menu = document.querySelector("#navbarContent");
+		// console.log(_menuButton.classList);
+		_menuButton.classList.add("collapsed");
+		_menu.classList.remove("show");
+	});
 });

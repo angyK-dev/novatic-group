@@ -1,0 +1,87 @@
+<section id="espaceclient" class="full-height">
+    <div class="container">
+        <h2 class="text-center title-2">ESPACE CLIENT</h2>
+        Entrer en contact avec...
+        <div class="row">
+            <div class="col">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="rdodg" name="rdoservices" class="custom-control-input">
+                    <label class="custom-control-label" for="rdodg">Direction Générale</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="rdomktcom" name="rdoservices" class="custom-control-input">
+                    <label class="custom-control-label" for="rdomktcom">Service Marketing & Communication</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="rdodrh" name="rdoservices" class="custom-control-input">
+                    <label class="custom-control-label" for="rdodrh">Direction des Ressources Humaines</label>
+                </div>
+            </div>
+        </div>
+        Je suis...
+        <div class="row">
+            <div class="col">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="rdoent" name="rdostatut" class="custom-control-input">
+                    <label class="custom-control-label" for="rdoent">Une Entreprise</label>
+                </div>
+
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="formRaisonSoc">Raison Sociale</label>
+                            <input type="text" class="form-control form-control-lg" id="formRaisonSoc"
+                                placeholder="Raison Sociale">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Commentaire</label>
+                        <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1"
+                            rows="3"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col col-md-6 col-lg-4 mx-auto">
+                            <button type="button" class="btn btn-block btn-outline-primary">Envoyer</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="rdopart" name="rdostatut" class="custom-control-input">
+                    <label class="custom-control-label" for="rdopart">Un Particulier</label>
+                </div>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label for="formNom">Nom</label>
+                            <input type="text" class="form-control form-control-lg" id="formNom" placeholder="Nom"
+                                readonly>
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="formPrenoms">Prénoms</label>
+                            <input type="text" class="form-control form-control-lg" id="formPrenoms"
+                                placeholder="Prénoms" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Commentaire</label>
+                        <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"
+                            readonly></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col col-md-6 col-lg-4 mx-auto">
+                            <button type="button" class="btn btn-block btn-outline-primary"
+                                disabled>Envoyer</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>

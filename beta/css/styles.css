@@ -442,11 +442,12 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 section {
-  padding: 6rem 0;
+  padding: 5.65rem 0;
 }
 
 section .nova-infos {
-  background-color: var(--bleu-windows);
+  display: none;
+  background-color: var(--bleu-1);
   color: #fff;
   overflow: hidden;
 }
